@@ -5,12 +5,9 @@ import './assets/lib/jquery-ui';
 import './assets/lib/jquery.resizeOnApproach.1.0.min';
 import './assets/js/index';
 
+// Tạo một biến toàn cục bằng cách sử dụng provide
 // console.log(App);
 createApp(App).mount("#app");
 export default {
-    // methods: {
-    //     changeBC(url) {
-    //         document.body.style.backgroundImage = `url(${url})`;
-    //     }
-    // }
+
 };

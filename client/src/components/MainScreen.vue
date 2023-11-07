@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="mainScreen">
     <div class="menu-bar">
     <div class="stripe">
     <div class="menu-items-left">
@@ -40,11 +40,11 @@
                 <div>Shut Down...</div>
                 </li>
                 <li>
-                <div id="fullscreen-button">Full Screen</div>
+                <div id="fullscreen-button" @click="onFullScreen()">Full Screen</div>
                 <div class="item-align-right">⌃⌘Q</div>
                 </li>
                 <li>
-                <div id="logout"><a href="logout.html">Log Out...</a></div>
+                <div id="logout"><a @click="onLogout()">Log Out...</a></div>
                 <div class="item-align-right">⇧⌘Q</div>
                 </li>
             </ul>
@@ -1028,17 +1028,19 @@
     @import url('../assets/styles/global.css');
     @import url('../assets/styles/photos.css');
 </style>
-   <!-- <script src="./assets/lib/jquery-3.5.1.min.js"></script>
-    <script src="./assets/lib/jquery-ui.js"></script>
-    <script src="./assets/lib/jquery.resizeOnApproach.1.0.min.js"></script>  -->
 <script>
     import '../assets/js/index';
     export default {
-        name: 'MainScreen', // Đổi tên thành phần thành 'HelloWorld' hoặc tên khác bao gồm nhiều từ
-        // Các phần khác của thành phần
+        name: 'MainScreen', 
         methods: {
             changeBC(url) {
                 document.body.style.backgroundImage = `url(${url})`;
+            },
+            onLogout() {
+                this.$emit('onLogout');
+            },
+            onFullScreen(){
+                this.$emit('onFullscreen');
             }
         }
 }

@@ -170,11 +170,11 @@ $(document).ready(function () {
     });
 
     //change apple icon color
-    $("#main-nav-menu > li:first-of-type").hover(function () {
-        $("#apple-icon").attr('src', 'images/apple-logo-white.png');
-    }, function () {
-        $("#apple-icon").attr('src', 'images/logo.svg');
-    });
+    // $("#main-nav-menu > li:first-of-type").hover(function () {
+    //     $("#apple-icon").attr('src', '../images/apple-logo-white.png');
+    // }, function () {
+    //     $("#apple-icon").attr('src', '/img/logo.3b65004c.svg');
+    // });
 
     //red button closes finder window
     $("#red-cross").on("click", function () {
