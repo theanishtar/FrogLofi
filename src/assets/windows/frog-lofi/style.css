@@ -1,9 +1,0 @@
-.draggable {
-	top: 0;
-	width: 200px;
-	height: 100px;
-	padding: 10px;
-	position: absolute;
-	cursor: grab;
-	z-index: 100;
-}
