@@ -12,7 +12,9 @@ $(document).ready(function () {
     $(function () {
         $("#resizable-box3").draggable();
     });
-
+    $(function () {
+        $("#resizable-box4").draggable();
+    });
     //resizable function
     $(function () {
         $("#resizable-box").resizable({
@@ -26,6 +28,11 @@ $(document).ready(function () {
     });
     $(function () {
         $("#resizable-box3").resizable({
+            autoHide: true
+        });
+    });
+    $(function () {
+        $("#resizable-box4").resizable({
             autoHide: true
         });
     });
@@ -191,9 +198,14 @@ $(document).ready(function () {
         $("#resizable-box3").css("display", "none");
     });
 
+    //red button closes finder window
+    $("#red-cross4").on("click", function () {
+        $("#resizable-box4").css("display", "none");
+    });
+
     //double click on folder opens finder
     $(".desktop-folders").find("div.folder-style").dblclick(function () {
-        $("#resizable-box3").css("display", "block");
+        $("#resizable-box4").css("display", "block");
     });
 
     //double click on folder opens finder

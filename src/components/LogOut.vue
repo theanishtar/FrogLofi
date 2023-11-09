@@ -14,10 +14,10 @@
 <div class="logout-main-background">
     <div class="login-form">
         <img src="../assets/images/apple-logo-white.png" alt="">
-        <form action="" name="login" method="POST">
+        <form action="">
             <input id="password" type="password" title="Password: 1234" placeholder="Password: 1234"
                 name="password">
-            <button type="submit" id="submit-btn">Login</button>
+            <button id="submit-btn" @click="login()">Login</button>
             <div id="error"></div>
         </form>
     </div>
@@ -50,13 +50,17 @@
     @import url('//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica');
     @import url('../assets/styles/logout.css');
     /* ************* LOGOUT PAGE ******************* */
+    .logout-main-background{
+        margin-top: 300px;
+    }
     body {
+        background-image: url("https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/23.png?raw=true");
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         background-color: black;
         color: white;
-        font-family: Helvetica, Arial, sans-serif
+        font-family: Helvetica, Arial, sans-serif;
     }
 
     @import url(//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica);
@@ -80,11 +84,17 @@
         background-color: rgb(124, 124, 124);
         height: 1.5rem;
         margin-top: 2rem;
+        padding-left: 5px;
+        outline: none;
     }
 
     input:focus {
+        border: none;
         background-color: rgb(143, 143, 143);
         outline: none;
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 
     button {
@@ -93,6 +103,8 @@
         border-radius: 3px;
         height: 1.6rem;
         outline: none;
+        margin-left: 10px;
+        padding: 0px 5px;
     }
 
     button:hover {
@@ -123,6 +135,9 @@
             changeBC(url) {
                 document.body.style.backgroundImage = `url(${url})`;
             },
+            login(){
+                this.$emit("login");
+            }
         }
     }
 </script>

@@ -4,7 +4,9 @@
         @onFullscreen="fullScreen()"
         @onChangeBC="changBC"
         />
-    <LogOut v-if="status === 'logout'"/>
+    <LogOut v-if="status === 'logout'"
+        @onLogin="doLogin()"
+    />
 </template>
 <style>
     @font-face {
@@ -50,6 +52,9 @@ export default {
         changBC({ imageUrl }){
             // alert(imageUrl);
             document.body.style.backgroundImage = `url(${imageUrl})`;
+        },
+        doLogin(){
+            this.status = 'login';
         }
     },
 }

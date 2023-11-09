@@ -1,5 +1,8 @@
 <template>
     <div id="mainScreen">
+    <div>
+    </div>
+
     <div class="menu-bar">
     <div class="stripe">
     <div class="menu-items-left">
@@ -690,7 +693,7 @@
         id="ytb-embed"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/videoseries?list=RDMMTkYVBTEMC5s&index=4"
+        src="https://www.youtube.com/embed/sUwD3GRPJos?si=tZrFeLC03csDaqss"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -742,6 +745,93 @@
         <div class="photo-grid" id="photo-grid">
     <a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/1.gif?raw=true" alt="Photo 1"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/10.gif?raw=true" alt="Photo 2"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/11.gif?raw=true" alt="Photo 3"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/12.gif?raw=true" alt="Photo 4"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/13.gif?raw=true" alt="Photo 5"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/14.gif?raw=true" alt="Photo 6"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/15.gif?raw=true" alt="Photo 7"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/16.gif?raw=true" alt="Photo 8"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/17.gif?raw=true" alt="Photo 9"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/18.gif?raw=true" alt="Photo 10"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/19.gif?raw=true" alt="Photo 11"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/2.gif?raw=true" alt="Photo 12"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/20.png?raw=true" alt="Photo 13"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/21.jpeg?raw=true" alt="Photo 14"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/22.png?raw=true" alt="Photo 15"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/23.png?raw=true" alt="Photo 16"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/24.png?raw=true" alt="Photo 17"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/25.png?raw=true" alt="Photo 18"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/26.png?raw=true" alt="Photo 19"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/27.png?raw=true" alt="Photo 20"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/28.jpg?raw=true" alt="Photo 21"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/29.jpg?raw=true" alt="Photo 22"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/3.gif?raw=true" alt="Photo 23"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/30.jpg?raw=true" alt="Photo 24"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/31.gif?raw=true" alt="Photo 25"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/32.jpeg?raw=true" alt="Photo 26"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/33.gif?raw=true" alt="Photo 27"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/34.gif?raw=true" alt="Photo 28"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/35.jpg?raw=true" alt="Photo 29"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/36.jpg?raw=true" alt="Photo 30"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/37.gif?raw=true" alt="Photo 31"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/38.webp?raw=true" alt="Photo 32"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/39.gif?raw=true" alt="Photo 33"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/4.gif?raw=true" alt="Photo 34"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/40.gif?raw=true" alt="Photo 35"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/41.jpg?raw=true" alt="Photo 36"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/5.gif?raw=true" alt="Photo 37"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/5.jpg?raw=true" alt="Photo 38"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/6.gif?raw=true" alt="Photo 39"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/7.gif?raw=true" alt="Photo 40"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/8.gif?raw=true" alt="Photo 41"></a><a class="photo-item" @click="changeBC($event)"><img src="https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/9.gif?raw=true" alt="Photo 42"></a></div>
     </div>
+    </div>
+    </div>
+
+    <!-- Rain -->
+    <div class="resizable-windows">
+    <div id="resizable-box4" class="ui-widget-content resizable">
+    <div class="box-header">
+        <div class="control-buttons">
+        <div class="buttons">
+            <img
+            src="../assets/images/finder/red.png"
+            alt=""
+            id="red-cross4"
+            />
+            <img src="../assets/images/finder/yellow.png" alt="" />
+            <img src="../assets/images/finder/green.png" alt="" />
+        </div>
+        <div class="folder-name">
+            <img src="../assets/images/folder-icon.png" alt="" /><span>
+            Rain Audio</span
+            >
+        </div>
+        </div>
+        <div class="control-buttons2">
+        <div class="buttons-left">
+            <button>
+            <img src="../assets/images/finder/left-arrow.svg" alt="" />
+            </button>
+            <button>
+            <img src="../assets/images/finder/right-arrow.svg" alt="" />
+            </button>
+        </div>
+        <div class="buttons-right">
+            <div class="menu-icon-buttons">
+            </div>
+            <div class="search-menu-bar">
+            <input type="text" placeholder="Search" />
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="box-body">
+        <div class="player player_audio_rain">
+            <div class="player-track-meta">
+                <p>Outfoxing the Fox</p>
+                <p><span>Kevin MacLeod</span></p>
+            </div>
+            <div class="player-controls">
+                <button @click="playRain()" class="player-play-btn" role="button" aria-label="Play" data-playing="false">
+                    <div class="player-icon-play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <title>play</title>
+                            <polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12" />
+                            <rect class="icon-container" width="24" height="24" />
+                        </svg>
+                    </div>
+
+                    <div class="player-icon-pause hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <title>pause</title>
+                            <g>
+                                <rect class="icon-pause" x="6" y="3.26" width="4" height="17.48" />
+                                <rect class="icon-pause" x="14" y="3.26" width="4" height="17.48" />
+                            </g>
+                            <rect class="icon-container" width="24" height="24" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="player-timeline">
+                    <span class="player-time player-time-current">00:00</span>
+                    <div class="player-progress" 
+                        @click="scrub($event)">
+                        <div class="player-progress-filled"></div>
+                    </div>
+                    <span class="player-time player-time-duration">00:00</span>
+                </div>
+                <div class="player-volume-container">
+                    <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+                </div>
+            </div>
+
+            <audio 
+                @ended="ended()"
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous"></audio>
+        </div>
+    </div>
+    <!-- <div class="box-footer"></div> -->
     </div>
     </div>
     <div class="dock-menu">
@@ -823,16 +913,24 @@
     </div>
     </div>
     </div>
+    
 </template>
 
 <style>
     @import url('../assets/styles/global.css');
     @import url('../assets/styles/photos.css');
+
+
+    
 </style>
 <script>
     import '../assets/js/index';
     export default {
         name: 'MainScreen', 
+        mounted() {
+            // this.loadRain();
+            // this.setTimeRain()
+        },
         methods: {
             changeBC(event) {
                 const aElement = event.currentTarget; // Lấy phần tử <a> được nhấp
@@ -848,6 +946,7 @@
                 this.$emit('onChangeBC',  { imageUrl: imageUrl });
             },
             onLogout() {
+                this.$emit('onChangeBC',  { imageUrl: 'https://github.com/dangtranhuu/frog-lofi/blob/main/wallpaper/5.jpg?raw=true' });
                 this.$emit('onLogout');
             },
             onFullScreen(){
@@ -855,8 +954,92 @@
             },
             onChangeBC(url){
                 this.$emit('onChangeBC', {url})
+            },
+            setTimeRain(){
+                const audioElement = document.querySelector("audio");
+                const playerCurrentTime = document.querySelector(".player-time-current");
+                const playerDuration = document.querySelector(".player-time-duration");
+                playerCurrentTime.textContent = new Date(audioElement.currentTime * 1000)
+                    .toISOString()
+                    .substr(11, 8);
+                playerDuration.textContent = new Date(audioElement.duration * 1000)
+                    .toISOString()
+                    .substr(11, 8);
+            },
+            playRain(){
+                // load sound via <audio tag
+                const audioCtx = new AudioContext();
+                // Player controls and attributes
+                const playButton = document.querySelector(".player-play-btn");
+                const playIcon = playButton.querySelector(".player-icon-play");
+                const pauseIcon = playButton.querySelector(".player-icon-pause");
+                // check if context is in suspended state (autoplay policy)
+                // By default browsers won't allow you to autoplay audio.
+                // You can overide by finding the AudioContext state and resuming it after a user interaction like a "click" event.
+                if (audioCtx.state === "suspended") {
+                    audioCtx.resume();
+                }
+
+                // Play or pause track depending on state
+                if (playButton.dataset.playing === "false") {
+                    document.querySelector("audio").play();
+
+                    playButton.dataset.playing = "true";
+                    playIcon.classList.add("hidden");
+                    pauseIcon.classList.remove("hidden");
+                } else if (playButton.dataset.playing === "true") {
+                    document.querySelector("audio").pause();
+                    playButton.dataset.playing = "false";
+                    pauseIcon.classList.add("hidden");
+                    playIcon.classList.remove("hidden");
+                }
+            },
+            ended(){
+                document.querySelector(".player-play-btn").dataset.playing = "false";
+                document.querySelector(".player-play-btn").querySelector(".player-icon-pause").classList.add("hidden");
+                document.querySelector(".player-play-btn").querySelector(".player-icon-play").classList.remove("hidden");
+                document.querySelector(".player-progress-filled").style.flexBasis = "0%";
+                document.querySelector("audio").currentTime = 0;
+                document.querySelector("audio").duration = document.querySelector("audio").duration;
+            },
+            scrub($event) {
+                const audioElement = document.querySelector("audio");
+                const progress = document.querySelector(".player-progress");
+                const scrubTime =
+                    ($event.offsetX / progress.offsetWidth) * audioElement.duration;
+                audioElement.currentTime = scrubTime;
+            },
+            loadRain(){
+                // load sound via <audio tag
+                const audioElement = document.querySelector("audio");
+                const audioCtx = new AudioContext();
+                const track = audioCtx.createMediaElementSource(audioElement);
+
+                // Player controls and attributes
+                const progress = document.querySelector(".player-progress");
+                const gainNode = audioCtx.createGain();
+                const volumeControl = document.querySelector(".player-volume");
+                volumeControl.addEventListener("change", () => {
+                    gainNode.gain.value = volumeControl.value;
+                });
+
+                track.connect(gainNode).connect(audioCtx.destination);
+
+                // Scrub player timeline to skip forward and back on click for easier UX
+                let mousedown = false;
+
+                function scrub(event) {
+                    const scrubTime =
+                        (event.offsetX / progress.offsetWidth) * audioElement.duration;
+                    audioElement.currentTime = scrubTime;
+                }
+
+                progress.addEventListener("click", scrub);
+                progress.addEventListener("mousemove", (e) => mousedown && scrub(e));
+                progress.addEventListener("mousedown", () => (mousedown = true));
+                progress.addEventListener("mouseup", () => (mousedown = false));
             }
         }
     }
-
+    
 </script>

@@ -1,4 +1,6 @@
 /* ************* LOGOUT PAGE ******************* */
+
+/* 
 body {
     margin: 0;
     padding: 0;
@@ -34,10 +36,10 @@ body {
 input:focus {
     background-color: rgb(143, 143, 143);
     outline: none;
-  }
+}
 
 button {
-    background-color: rgb(143, 143, 143); 
+    background-color: rgb(143, 143, 143);
     border: none;
     border-radius: 3px;
     height: 1.6rem;
@@ -58,4 +60,4 @@ button:hover {
     text-align: center;
     margin-top: 1rem;
     padding-top: 0.3rem;
-}
+} */
