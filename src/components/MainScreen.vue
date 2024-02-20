@@ -927,22 +927,12 @@
     import '../assets/js/index';
     export default {
         name: 'MainScreen', 
-        mounted() {
-            // this.loadRain();
-            // this.setTimeRain()
-        },
         methods: {
             changeBC(event) {
-                const aElement = event.currentTarget; // Lấy phần tử <a> được nhấp
-                const imgElement = aElement.querySelector('img'); // Tìm phần tử <img> bên trong phần tử <a>
-                const imageUrl = imgElement.getAttribute('src'); // Lấy URL của hình ảnh từ thuộc tính src
-                // Ở đây, bạn có thể sử dụng imageUrl để thực hiện các xử lý bạn cần.
+                const aElement = event.currentTarget;
+                const imgElement = aElement.querySelector('img');
+                const imageUrl = imgElement.getAttribute('src');
                 console.log('URL của hình ảnh:', imageUrl);
-                // const imgElements = this.$el.querySelectorAll('#photo-grid img'); //currentSrc
-                // console.log(imgElements);
-                // console.log(att)
-                // //document.body.style.backgroundImage = `url(${url})`;
-                // let url="yu"
                 this.$emit('onChangeBC',  { imageUrl: imageUrl });
             },
             onLogout() {
@@ -967,23 +957,15 @@
                     .substr(11, 8);
             },
             playRain(){
-                // load sound via <audio tag
                 const audioCtx = new AudioContext();
-                // Player controls and attributes
                 const playButton = document.querySelector(".player-play-btn");
                 const playIcon = playButton.querySelector(".player-icon-play");
                 const pauseIcon = playButton.querySelector(".player-icon-pause");
-                // check if context is in suspended state (autoplay policy)
-                // By default browsers won't allow you to autoplay audio.
-                // You can overide by finding the AudioContext state and resuming it after a user interaction like a "click" event.
                 if (audioCtx.state === "suspended") {
                     audioCtx.resume();
                 }
-
-                // Play or pause track depending on state
                 if (playButton.dataset.playing === "false") {
                     document.querySelector("audio").play();
-
                     playButton.dataset.playing = "true";
                     playIcon.classList.add("hidden");
                     pauseIcon.classList.remove("hidden");
@@ -995,12 +977,14 @@
                 }
             },
             ended(){
-                document.querySelector(".player-play-btn").dataset.playing = "false";
-                document.querySelector(".player-play-btn").querySelector(".player-icon-pause").classList.add("hidden");
-                document.querySelector(".player-play-btn").querySelector(".player-icon-play").classList.remove("hidden");
+                const playerPlayButton = document.querySelector(".player-play-btn");
+                playerPlayButton.dataset.playing = "false";
+                playerPlayButton.querySelector(".player-icon-pause").classList.add("hidden");
+                playerPlayButton.querySelector(".player-icon-play").classList.remove("hidden");
                 document.querySelector(".player-progress-filled").style.flexBasis = "0%";
-                document.querySelector("audio").currentTime = 0;
-                document.querySelector("audio").duration = document.querySelector("audio").duration;
+                const audioElement = document.querySelector("audio");
+                audioElement.currentTime = 0;
+                audioElement.duration = audioElement.duration;
             },
             scrub($event) {
                 const audioElement = document.querySelector("audio");
@@ -1010,30 +994,22 @@
                 audioElement.currentTime = scrubTime;
             },
             loadRain(){
-                // load sound via <audio tag
                 const audioElement = document.querySelector("audio");
                 const audioCtx = new AudioContext();
                 const track = audioCtx.createMediaElementSource(audioElement);
-
-                // Player controls and attributes
                 const progress = document.querySelector(".player-progress");
                 const gainNode = audioCtx.createGain();
                 const volumeControl = document.querySelector(".player-volume");
                 volumeControl.addEventListener("change", () => {
                     gainNode.gain.value = volumeControl.value;
                 });
-
                 track.connect(gainNode).connect(audioCtx.destination);
-
-                // Scrub player timeline to skip forward and back on click for easier UX
                 let mousedown = false;
-
                 function scrub(event) {
                     const scrubTime =
                         (event.offsetX / progress.offsetWidth) * audioElement.duration;
                     audioElement.currentTime = scrubTime;
                 }
-
                 progress.addEventListener("click", scrub);
                 progress.addEventListener("mousemove", (e) => mousedown && scrub(e));
                 progress.addEventListener("mousedown", () => (mousedown = true));
